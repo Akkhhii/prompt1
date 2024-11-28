@@ -1,0 +1,376 @@
+* {
+margin : 0;
+padding : 0;
+box-sizing : border-box;
+}
+
+html, body {
+height : 100%;
+width: 100%;
+font-family: "Nunito Sans", sans-serif;
+}
+main{
+    width: 100%;
+}
+nav{
+    width: 100%;
+    height: 5em;
+    /* background: #7d3333; */
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 8em;
+    background: rgb(0, 0, 0);
+    color: white;
+    z-index: 1;
+}
+nav img{
+    width: 4.5em;
+    height: 4em;
+    mix-blend-mode:hard-light;
+    border-radius: 0.8em;
+    cursor: pointer;
+}
+
+nav .links{
+    width: 55%;
+    height: 100%;
+    /* background: #b48181; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+nav .links ul{
+    gap: 5em;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    list-style: none;
+}
+nav .links ul li{
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+nav .links ul li:hover{
+    color:rgb(89, 57, 40);
+}
+
+
+nav .links ul button{
+    padding: 0.8em 3em;
+    border-radius: 1.5em;
+    border: none;
+    font-weight: 600;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+nav .links ul button:hover{
+    padding: 0.8em 3em;
+    border-radius: 1.5em;
+    background-color:rgb(89, 57, 40);
+    color: white;
+}
+
+
+.page1{
+    width: 100%;
+    background: url(https://images.unsplash.com/photo-1515555230216-82228b88ea98?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    /* padding: 8em; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page1 .content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.667);
+    padding: 8em;
+    color: white;
+}
+
+.content .top{
+    width: 100%;
+    height: 100%;
+    /* background: #a21f1f; */
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.content .top .left{
+    width: 50%;
+    height: 0%;
+    /* background: #1e1f1e64; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    padding: 10em;
+    border-radius: 1em;
+    /* background: #000;     */
+}
+.content .top .left button{
+    width: 30%;
+    padding: 1em;
+    font-weight: 600;
+    border-radius: 2em;
+    border: none;
+    transition: all 0.2s ease-in;
+    font-size: 1em;
+}
+.content .top .left button:hover{
+    width: 30%;
+    padding: 1em;
+    font-weight: 600;
+    border-radius: 2em;
+    border: none;
+    background-color: rgb(89, 57, 40);
+    color: white;
+}
+
+.content .top .left h1{
+    font-size: 3em;
+}
+.content .top .left p{
+    font-size: 1.2em;
+}
+
+    .content .top .right{
+        width: 40%;
+        height: 100%;
+    }
+
+.page1 .bottom{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 0 0 9em;
+}
+.page1 .bottom ul{
+    width: 12%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    border-radius: 0.7em;
+    padding: 0.4em;
+}
+.page1 .bottom ul img{
+  width: 1.7em;
+  height: 1.7em;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+.page1 .content .top .right{
+    width: 40%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* background: rgba(89, 57, 40, 0.333); */
+    border: 1px solid rgba(255, 255, 255, 0.421);
+    /* padding-bottom: 3em; */
+    border-radius: 1em;
+    /* padding: 10em 4em; */
+    box-shadow: 0 0em 2em;
+}   
+
+.page1 .content .top .right img{
+   width: 100%;
+   height: 100%;
+}
+.page1 .content .top .right .text{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 2em;
+   padding: 2em 4em;
+   /* background: #ad6969; */
+}
+.page1 .content .top .right .text button{
+   width: 50%;
+   height: 100%;
+   padding: 0.8em;
+   border-radius: 0.7em;
+   border: none;
+   font-size: 1em;
+   transition: all 0.2s ease-in;
+   font-weight: 600
+}
+.page1 .content .top .right .text button:hover{
+   width: 50%;
+   height: 100%;
+   padding: 0.8em;
+   border-radius: 0.7em;
+   border: none;
+   font-size: 1em;
+   background:rgb(89, 57, 40);
+   color: white;
+}
+
+
+/* Responsiveness starts from here */
+/* Device = Most of the Smartphones Mobiles (Portrait) Screen = B/w 320px to 479px */
+  
+@media (min-width: 320px) and (max-width: 480px) {
+    nav .links{
+    display: none; 
+    }
+
+    nav{
+        padding: 1em;
+    }
+    nav  img{
+        width: 3em;
+        height: 3em;
+    }
+
+    .page1 .content{
+        /* background: #4f2929; */
+        width: 100%;
+        height: 50%;
+        font-size: 0.6em;
+        padding: 3em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .page1 .content .top .left{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .page1 .content .left h1{
+        font-size: 3em;
+        text-align: center;
+    }
+    .page1 .content .left p{
+        font-size: 1.4em;
+        text-align: center;
+    }
+    .page1 .content .left button{
+        width: 30%;
+        font-size: 0.9em;
+    }
+
+    .page1 .content .top{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page1 .top .left{
+        width: 100%;
+    }
+    .page1 .content .top .right{
+        width: 80%;
+        background: #000;
+        padding: 0em 4em;
+        text-align: center;
+    }
+
+    .page1 .bottom{
+        width: 100%;
+        padding: 0;
+        /* background: #000; */
+        display: flex;
+        justify-content: center;
+        padding: 2em 0em;
+    }
+    
+}       
+  
+/* Device = Tablets, Ipads (portrait) Screen = B/w 768px to 1024px*/
+  
+@media (min-width: 768px) and (max-width: 1024px) {
+  nav{
+    padding: 2em;
+    font-size: 0.8em;
+  }
+  
+  .page1 .top{
+    width: 100%;
+    /* background: #7e3636; */
+    display: flex;
+  }
+  .page1 .top{
+    width: 100%;
+    height: 66.7em;
+    /* background: #c48a8a;     */
+  }
+  .page1 .top .left{
+    width: 100%;
+    height: 40%;
+    /* background: #000; */
+  }
+  .page1 .top .left h1{
+    font-size: 2em;
+  }
+  .page1 .top .left button{
+    font-size: 0.8em;
+  }
+
+  .page1 .content .top .right{
+    width: 100%;
+    height: 70%;
+    padding: 1em 5em;
+  }
+  .page1 .content .top .right img{
+    width: 50%;
+    height: 18em;
+    padding: 2em;
+  }
+  .page1 .content .top .right .text {
+    width: 100%;
+    height: 50%;
+  }
+  .page1 .content .top .right .text button{
+    width: 80%;
+    height: 20%;
+  }
+  .page1 .content .top .right .text button:hover{
+    width: 80%;
+    height: 20%;
+  }
+  .page1 .content .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0em;
+  }
+  .page1 .content .bottom img{
+    width: 1.5em;
+    height: 1.5em;
+  }
+}
+  
+/* Device = Tablets, Ipads (landscape) Screen = B/w 768px to 1024px */
+  
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
+  
+/* Device = Low Resolution Tablets, Mobiles (Landscape) Screen = B/w 481px to 767px */
+  
+@media (min-width: 481px) and (max-width: 767px) {
+    
+  
+}
